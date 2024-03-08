@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --preta-- : black;
+    --azul-texto--: #00BFFF;
+    --branco--: white;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--preta--);
+    color: var(--branco--);
+}
+
+/*----Cabecalho      AULA-4----*/
+.header-about{
+    margin-top: 2%;
+}
+
+.header__container-about{
+    display: flex;
+    justify-content: left;
+    margin-left: 15%;
+    gap: 10%;
+}
+
+.header__container__ancora-about{
+    text-decoration: none;
+    color: var(--azul-texto--);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.conteudo-about{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+}
+
+.titulo-texto-about {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.conteudo__titulo-about{
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+}
+
+.conteudo__texto-about{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3rem;
+    line-height: 150%;
+}
+
+.joana-about{
+    width: 35%;
+    height: 35%;
+    align-items: center;
+}
+
+.footer-about{
+    background-color: var(--azul-texto--);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: var(--fonte-secundaria);
+    color: var(--preta--);
+ }
+
+ .header__container__ancora-about:hover{
+    color: purple;
+ }
+ .header__container__ancora-about:active{
+    text-decoration: overline;
+ }
+
+ .footer-about:hover{
+    color: var(--branco--);
+ }
+
+
+ /*MEDIAS QUERYS*/
+ @media /*CONTEUDO*/(max-width: 1200px){
+    .conteudo-about{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .titulo-texto-about{
+        width: 100%;
+        align-items: center;
+    }
+
+    .joana-about{
+        width: 100%;  
+        margin-bottom: 10%;  
+    }
+ }
+

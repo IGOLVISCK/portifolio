@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --preta-- : black;
+    --azul-texto--: #00BFFF;
+    --branco--: white;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--preta--);
+    color: var(--branco--);
+}
+
+/*----Cabecalho      AULA-4----*/
+.header{
+    margin-top: 2%;
+}
+
+.header__container{
+    display: flex;
+    justify-content: left;
+    margin-left: 15%;
+    gap: 10%;
+}
+
+.header__container__ancora{
+    text-decoration: none;
+    color: var(--azul-texto--);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+/*----Fim cabecalho----*/
+
+/*----Titulo - texto AULA-5----*/
+.conteudo__container__box {
+    margin-top: 5%;
+    display: flex;
+    margin-left: 15%;
+    flex-direction: column;
+    width: 25rem;
+}
+
+
+
+.conteudo__container__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+    width: 25rem;
+    margin-bottom: 10%;
+    font-weight: 800;
+    line-height: 3rem;
+}
+.titulo__destaque {
+    color: var(--azul-texto--);
+}
+
+.conteudo__container__texto{
+    font-size: 1.7rem;
+    font-family: var(--fonte-secundaria);
+    line-height: 2rem;
+}
+/*----FIM titulo - texto ----*/
+
+/*----Botoes de redes sociais AULA-7----*/
+.conteudo__container__botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5%;
+    margin-left: 17%;
+}
+
+.conteudo__container__acesse{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.conteudo__container__ancora{
+    margin-bottom: 2%;
+    margin-left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid var(--azul-texto--);
+    width: 50%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+/*---- FIM Botoes de redes sociais----*/
+
+/*IMAGEM JOANA E FOOTER AULA-7*/
+.imagem__joana{
+    width: 50%;
+}
+.conteudo__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7%;
+}
+.conteudo {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.1rem;
+}
+ .footer{
+    background-color: var(--azul-texto--);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: var(--fonte-secundaria);
+    color: var(--preta--);
+ }
+ /*FIM IMAGEM E FOOTER*/
+
+ /*DECORAÇÃO*/
+ .conteudo__container__ancora:hover{
+    border-color: purple;
+    color: purple;
+ }
+
+ .footer:hover{
+    color: var(--branco--);
+ }
+
+ .header__container__ancora:hover{
+    color: purple;
+ }
+ .header__container__ancora:active{
+    text-decoration: line-through;
+ }
+ /*FIM DECORAÇÃO*/
+
+/*RESPONSIVIDADE*/
+@media /*header*/(max-width: 1200px){
+    .header{
+        display: flex;
+        justify-content: left;
+    }
+    .header__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__container__ancora{
+        margin-left: 50%;
+    }
+}
+
+@media /*conteudo*/(max-width: 1200px) {
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo__container__titulo{
+        font-size: 1.5rem;
+    }
+    .conteudo__container__texto{
+        font-size: 1rem;
+    }
+    .conteudo__container__botoes{
+        align-items: center;
+        justify-content: left;
+    }
+    
+    @media /*IMAGEM JOANA E FOOTER*/(max-width: 1200px){
+        .imagem__joana{
+            display: flex;
+            margin-left: 30%;
+            margin-top: 10%;
+            width: 20rem;
+        }
+        .footer{
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+}
